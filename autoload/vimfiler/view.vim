@@ -256,7 +256,7 @@ function! vimfiler#view#_get_print_lines(files) abort
 
     let mark = ''
     if file.vimfiler__nest_level > 0
-      let mark .= repeat(' ', file.vimfiler__nest_level
+      let mark .= repeat('  ', file.vimfiler__nest_level
             \       * g:vimfiler_tree_indentation)
             \ . g:vimfiler_tree_leaf_icon
     endif
